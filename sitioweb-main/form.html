@@ -82,7 +82,7 @@
     </nav>
   </header>
 
-  <!-- Formulario de registro SAMUEL AQUI LLAMO A REGISTRAR EL FORMULARIO-->
+  <!-- Aqui se llama a registrar el formulario-->
 <section class="bg-fixed">
   <div class="container">
     <div class="row justify-content-center">
@@ -115,7 +115,7 @@
   </div>
 </section>
 
-<script>//SAMUEL AQUI VALIDA (JAVASCRIPT)
+<script>//Validación del formulario 
   function validateForm() {
     var firstName = document.getElementById("first-name").value;
     var lastName = document.getElementById("last-name").value;
@@ -123,7 +123,7 @@
     var email = document.getElementById("email").value;
     var city = document.getElementById("city").value;
 
-    // Validación de campos
+    // Validación de todos los campos que hay que llenar 
     if (firstName.trim() === "" || lastName.trim() === "" || phone.trim() === "" || email.trim() === "" || city.trim() === "") {
       alert("Por favor, complete todos los campos.");
       return;
@@ -136,11 +136,11 @@
       return;
     }
 
-    // Si pasa todas las validaciones, puedes enviar el formulario aquí
+    // Si pasa todas las validaciones recien puede enviar la alerta
     alert("¡Formulario enviado con éxito!");
     // Aquí puedes agregar el código para enviar los datos del formulario a tu servidor
 
-    // Redirigir a formulario.html después de 2 segundos
+    // Aqui se redirige a formulario.html en 2 segundos 
     setTimeout(function() {
       window.location.href = 'formulario.html?' + 'nombre=' + encodeURIComponent(firstName) + '&apellido=' + encodeURIComponent(lastName) + '&telefono=' + encodeURIComponent(phone) + '&email=' + encodeURIComponent(email) + '&ciudad=' + encodeURIComponent(city);
     }, 2000);
@@ -184,9 +184,9 @@
     </div>
   </footer>
 
-  <!-- Bootstrap 5 JS ESTO TAMBIEN SAMUEL -->
+  <!-- Bootstrap 5 js  -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
-  <!-- Tu script de validación TAMBIENTO ESTO SAMUEL -->
+  <!-- Tu script de validación  -->
   <script src="script.js"></script>
 
   <!-- Bootstrap 5 -->
